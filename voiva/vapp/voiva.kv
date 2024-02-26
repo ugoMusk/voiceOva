@@ -1,10 +1,19 @@
+#:kivy 2.3.0
+
 <WindowManager>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
     Screen:
         name: 'home'
         BoxLayout:
             orientation: "vertical"
             Button:
                 text: "Switch to Home"
+                background_color: 0, 1, 250, 0.70
                 on_press: root.switch_to_home_screen()
 
             Button:
