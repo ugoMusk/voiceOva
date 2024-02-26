@@ -1,0 +1,46 @@
+<WindowManager>:
+
+    Screen:
+        name: 'home'
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: "Home Window"
+
+            Button:
+                text: "Switch to Create"
+                on_press: root.switch_to_create_screen()
+
+            Button:
+                text: "Switch to Docs"
+                on_press: root.switch_to_docs_screen()
+
+    Screen:
+        name: 'create'
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: "Create Window"
+
+            Button:
+                text: "Switch to Home"
+                on_press: root.switch_to_home_screen()
+
+            Button:
+                text: "Switch to Docs"
+                on_press: root.switch_to_docs_screen()
+
+    Screen:
+        name: 'docs'
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: "Docs Window"
+
+            Button:
+                text: "Switch to Home"
+                on_press: root.switch_to_home_screen()
+
+            Button:
+                text: "Switch to Docs"
+                on_press: root.switch_to_docs_screen()
