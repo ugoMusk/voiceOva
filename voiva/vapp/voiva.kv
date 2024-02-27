@@ -11,57 +11,100 @@
         name: 'home'
         BoxLayout:
             orientation: "vertical"
-            Button:
-                text: "Switch to Home"
-                background_color: 0, 1, 250, 0.70
-                on_press: root.switch_to_home_screen()
+            AnchorLayout:
+                size_hint: (None, None)
+                size: (root.width, 30)
+                anchor_x: 'center'
+                anchor_y: 'top'
+                canvas: 
+                    Color: 
+                        rgb: 0, 57, 0, .78 
+                    Rectangle: 
+                        pos: self.pos 
+                        size: self.size
+                BoxLayout:
+                    orientation: "horizontal"
+                    Button:
+                        text: "Switch to Home"
+                        background_color: 0, 1, 250, 0.70
+                        on_press: root.switch_to_home_screen()
 
-            Button:
-                text: "Switch to Create"
-                on_press: root.switch_to_create_screen()
+                    Button:
+                        text: "Switch to Create"
+                        on_press: root.switch_to_create_screen()
 
-            Button:
-                text: "Switch to Docs"
-                on_press: root.switch_to_docs_screen()
+                    Button:
+                        text: "Switch to Docs"
+                        on_press: root.switch_to_docs_screen()
 
             Label:
                 text: "Home Window"
+                color: 0, 0, 0, 1
 
     Screen:
         name: 'create'
         BoxLayout:
             orientation: "vertical"
-            
-            Button:
-                text: "Switch to Home"
-                on_press: root.switch_to_home_screen()
+            AnchorLayout:
+                size_hint: (None, None)
+                size: (root.width, 30)
+                anchor_x: 'center'
+                anchor_y: 'top'
+                canvas: 
+                    Color: 
+                        rgb: 0, 57, 0, .78 
+                    Rectangle: 
+                        pos: self.pos 
+                        size: self.size 
+                BoxLayout:
+                    orientation: "horizontal"
+                    Button:
+                        text: "Switch to Home"
+                        on_press: root.switch_to_home_screen()
 
-            Button:
-                text: "Switch to Create"
-                on_press: root.switch_to_create_screen()
+                    Button:
+                        text: "Switch to Create"
+                        background_color: 0, 1, 250, 0.70
+                        on_press: root.switch_to_create_screen()
 
-            Button:
-                text: "Switch to Docs"
-                on_press: root.switch_to_docs_screen()
+                    Button:
+                        text: "Switch to Docs"
+                        on_press: root.switch_to_docs_screen()
+
             Label:
                 text: "Create Window"
+                color: 0, 0, 0, 1
 
     Screen:
         name: 'docs'
         BoxLayout:
             orientation: "vertical"
+            AnchorLayout:
+                size_hint: (None, None)
+                size: (root.width, 30)
+                anchor_x: 'center'
+                anchor_y: 'top'
+                canvas: 
+                    Color: 
+                        rgb: 0, 57, 0, .78 
+                    Rectangle: 
+                        pos: self.pos 
+                        size: self.size
+                BoxLayout:
+                    orientation: "horizontal"
+                    Button:
+                        text: "Switch to Home"
+                        background_color: 0, 1, 250, 0.70
+                        on_press: root.switch_to_home_screen()
 
-            Button:
-                text: "Switch to Home"
-                on_press: root.switch_to_home_screen()
-
-            Button:
-                text: "Switch to Create"
-                on_press: root.switch_to_create_screen()
-
-            Button:
-                text: "Switch to Docs"
-                on_press: root.switch_to_docs_screen()
+                    Button:
+                        text: "Switch to Create"
+                        on_press: root.switch_to_create_screen()
+                    Button:
+                        text: "Switch to Docs"
+                        background_color: 0, 1, 250, 0.70
+                        on_press: root.switch_to_docs_screen()
 
             Label:
                 text: "Docs Window"
+                color: 0, 0, 0, 1
